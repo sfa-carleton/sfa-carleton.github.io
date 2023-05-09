@@ -1,0 +1,24 @@
+{
+  "name": "sfa-carleton.github.io",
+  "version": "1.0.0",
+  "description": "Carleton's SFA site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfa-carleton/sfa-carleton.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfa-carleton/sfa-carleton.github.io/issues"
+  },
+  "homepage": "https://github.com/sfa-carleton/sfa-carleton.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
