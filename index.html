@@ -1,7 +1,61 @@
-<h1>Hello World</h1>
-<p>sfa sfa sfa</p>
-<p>Distinctio in dicta velit neque vero odio nobis. Voluptas incidunt velit et qui quo eum. Dolorum impedit et eos voluptate excepturi eaque cumque dolor.</p>
-<p>Qui harum est porro ipsum dolor sapiente. Quia magnam doloremque veniam. Quia nam sed eum et magnam fugiat odit. Ut repudiandae velit doloremque sed illo sequi nostrum aut. Eligendi neque dolor qui. Delectus minima iste doloribus et.</p>
-<p>Deserunt placeat nulla commodi amet. Corporis sint hic molestias voluptates cum quia quidem consequatur. Numquam esse voluptatibus similique quas ullam.</p>
-<p>Et labore provident sunt. Laborum facere non temporibus et est sint. Incidunt velit culpa nisi.</p>
-<p>Consectetur repellat est modi rerum consequuntur. Natus accusamus nulla dolor asperiores repudiandae cupiditate iste. Commodi deserunt reiciendis sed est quo velit beatae. Minus molestiae ipsum quasi et. Quod et deserunt libero saepe ut. Sit sed ut quia modi.</p>
+<!DOCTYPE html>
+<!--
+    This is a Nunjucks file. Nunjucks is like HTML but has support for templates and stuff.
+    Everything that isn't in double curly brackets is plain-ol HTML.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <!-- 
+        The double curly braces turn on Nunjucks! This tells it to read the "title" variable.
+        The title variable is set in the front matter.
+    -->
+    <title>SFA Home Page</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <!--
+        Put the content into the body of the page. `safe` tells it to not double-escape stuff.
+    -->
+    <!--
+    Hello, source code editor!
+
+    The special filename "index" is what you access at the root of a website, without any `/whatever/foo.html` afterwards.
+
+    The three-dash-delimited area above is called the "front matter." It must be at the top of the file if there is one and
+    gives eleventy some more information about how to work with this file.
+    This front matter says that this page should be inserted into the `wrapper.md` layout; layouts and includes are both
+    in the _includes directory (yes, it's confusing).
+    You write the front matter in YAML, a language sent by Satan to punish programmers. Hopefully you can just stick to
+    easy key-value stuff.
+
+    https://www.11ty.dev/docs/layouts/
+-->
+<p>Welcome to the</p>
+<h1 style="text-align: center;">Carleton Science-Fiction Fantasy Alliance!</h1>
+<p>home page.</p>
+<p>This is a work-in-progress remake of the old Wordpress site, hopefully easier to host and maintain.</p>
+
+
+    <footer>
+        <hr />
+        <i>
+            This page created Tue, 09 May 2023 18:00:17 GMT. Site was built Tue, 09 May 2023 23:28:39 GMT.
+            <br>
+            This site built using <a href="https://11ty.dev" target="_blank" rel="noopener noreferrer">Eleventy.js</a>,
+            <a href="https://github.com/h5bp/main.css" target="_blank" rel="noopener noreferrer">Main.css</a> with help from
+            <a href="https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41" target="_blank" rel="noopener noreferrer">56 Bytes of CSS</a>,
+            and <a href="https://gifcities.org" target="_blank" rel="noopener noreferrer">GifCities</a>.
+            <br>
+            Current webmaster: Petrichor Park '24.
+        </i>
+    </footer>
+</body>
+</html>
