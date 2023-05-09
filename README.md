@@ -23,10 +23,8 @@ You can edit the site via Github's web interface, or on your local computer. Loc
 > 1. Figure out where your [git-credentials](https://git-scm.com/docs/git-credential-store) file is
 > 2. If it exists, append `https://sfa-carleton:[THE TOKEN]@github.com` to it using your favorite text editor
 > 3. If it doesn't exist, create it and put the above in it.
-
-We use [Eleventy](https://11ty.dev) to build the site; this way instead of having to write a bunch of horrible HTML we can just write plain text files and have the computer worry about the computery stuff.
-
-Workflow: Edit or add files in the `src` directory. Run these Git commands:
+>
+> Then git clone it, edit /src, and be on your merry way.
 
 ## Resources
 
@@ -35,6 +33,8 @@ Workflow: Edit or add files in the `src` directory. Run these Git commands:
 - https://www.freecodecamp.org/news/introduction-to-git-and-github/
 - Eleventy is a "static site generator" that makes it less of a pain in the tuckus to write websites. https://www.11ty.dev/docs/getting-started/
 - Eleventy is written using Node.js, which makes it *more* of a pain in the tuckus to write websites.
+- I tried to leave convenient comments in all the source files, so read those.
+- And if you can't figure it out, someone in the club probably still has a way to contact me.
 
 Magic commands. 
 

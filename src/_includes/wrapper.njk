@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+    This is a Nunjucks file. Nunjucks is like HTML but has support for templates and stuff.
+    Everything that isn't in double curly brackets is plain-ol HTML.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <!-- 
+        The double curly braces turn on Nunjucks! This tells it to read the "title" variable.
+        The title variable is set in the front matter.
+    -->
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <!--
+        Put the content into the body of the page. `safe` tells it to not double-escape stuff.
+    -->
+    {{ content | safe }}
+
+    <footer>
+        <hr />
+        <i>
+            This page created {{ page.date.toUTCString() }}. Site was built {{ buildTime.toUTCString() }}.
+            <br>
+            This site built using {% extLink "Eleventy.js", "https://11ty.dev" %},
+            {% extLink "Main.css", "https://github.com/h5bp/main.css" %} with help from
+            {% extLink "56 Bytes of CSS", "https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41" %},
+            and {% extLink "GifCities", "https://gifcities.org" %}.
+            <br>
+            Current webmaster: Petrichor Park '24.
+        </i>
+    </footer>
+</body>
+</html>

@@ -1,13 +1,27 @@
-# Hello World
+---
+layout: wrapper.njk
+title: SFA Home Page
+date: 2023-05-09 18:00:17
+---
+<!--
+    Hello, source code editor!
 
-sfa sfa sfa
+    The special filename "index" is what you access at the root of a website, without any `/whatever/foo.html` afterwards.
 
-Distinctio in dicta velit neque vero odio nobis. Voluptas incidunt velit et qui quo eum. Dolorum impedit et eos voluptate excepturi eaque cumque dolor.
+    The three-dash-delimited area above is called the "front matter." It must be at the top of the file if there is one and
+    gives eleventy some more information about how to work with this file.
+    This front matter says that this page should be inserted into the `wrapper.md` layout; layouts and includes are both
+    in the _includes directory (yes, it's confusing).
+    You write the front matter in YAML, a language sent by Satan to punish programmers. Hopefully you can just stick to
+    easy key-value stuff.
 
-Qui harum est porro ipsum dolor sapiente. Quia magnam doloremque veniam. Quia nam sed eum et magnam fugiat odit. Ut repudiandae velit doloremque sed illo sequi nostrum aut. Eligendi neque dolor qui. Delectus minima iste doloribus et.
+    https://www.11ty.dev/docs/layouts/
+-->
 
-Deserunt placeat nulla commodi amet. Corporis sint hic molestias voluptates cum quia quidem consequatur. Numquam esse voluptatibus similique quas ullam.
+Welcome to the
 
-Et labore provident sunt. Laborum facere non temporibus et est sint. Incidunt velit culpa nisi.
+<h1 style="text-align: center;">Carleton Science-Fiction Fantasy Alliance!</h1>
 
-Consectetur repellat est modi rerum consequuntur. Natus accusamus nulla dolor asperiores repudiandae cupiditate iste. Commodi deserunt reiciendis sed est quo velit beatae. Minus molestiae ipsum quasi et. Quod et deserunt libero saepe ut. Sit sed ut quia modi.
+home page.
+
+This is a work-in-progress remake of the old Wordpress site, hopefully easier to host and maintain.
