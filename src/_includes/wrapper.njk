@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <!--
-    This is a Nunjucks file. Nunjucks is like HTML but has support for templates and stuff.
-    Everything that isn't in double curly brackets is plain-ol HTML.
+  This is a Nunjucks file. Nunjucks is like HTML but has support for templates and stuff.
+  Everything that isn't in double curly brackets is plain-ol HTML.
 -->
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/static/style.css" />
-
-    <!-- 
-        The double curly braces turn on Nunjucks! This tells it to read the "title" variable.
-        The title variable is set in the front matter.
+    <link rel="stylesheet" href="/static/style.css"/>
+    <script defer src="/static/js/main.js"></script>
+    <!--
+      The double curly braces turn on Nunjucks! This tells it to read the "title" variable.
+      The title variable is set in the front matter.
     -->
     <title>{{ title }}</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-
+      <!-- Flexbox is against the spirit of Web 1.0, but on the other hand, auughhhh -->
+      <div style="width:100%; display:flex;">
+        <span style="flex:1;">
+          <a href="/">Warp Back To Home Page</a>
+        </span>
+        <span style="flex:1; text-align:right;">
+          "<span id="funny-message">Disabling Javascript from</span> 1995-Present"
+        </span>
+      </div>
+      <hr />
     </header>
-    <!--
-        Put the content into the body of the page. `safe` tells it to not double-escape stuff.
-    -->
+
+    <!-- Put the content into the body of the page. `safe` tells it to not double-escape stuff. -->
     {{ content | safe }}
 
     <footer>
-        <hr />
-        <i>
-            This page created {{ page.date.toUTCString() }}. Site was built {{ buildTime.toUTCString() }}.
-            <br>
-            This site built using {% extLink "Eleventy.js", "https://11ty.dev" %},
-            {% extLink "Main.css", "https://github.com/h5bp/main.css" %} with help from
-            {% extLink "56 Bytes of CSS", "https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41" %},
-            and {% extLink "GifCities", "https://gifcities.org" %}.
-            <br>
-            Current webmaster: Petrichor Park '24.
-        </i>
+      <hr/>
+      <i>
+        This page created {{ page.date.toUTCString() }}. Site was built {{ buildTime.toUTCString() }}.
+        <br>
+        <!-- I defined "extLink" in the eleventy.config.js file -->
+        This site built using {% extLink "Eleventy.js", "https://11ty.dev" %},
+        {% extLink "Main.css", "https://github.com/h5bp/main.css" %} with help from
+        {% extLink "56 Bytes of CSS", "https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41" %},
+        and {% extLink "GifCities", "https://gifcities.org" %}.
+        <br>
+        Current webmaster: Petrichor Park '24.
+        <br><br>
+        <a href="/">Warp back to homepage</a>
+      </i>
     </footer>
-</body>
+  </body>
 </html>
