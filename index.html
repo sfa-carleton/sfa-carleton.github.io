@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <!--
-    This is a Nunjucks file. Nunjucks is like HTML but has support for templates and stuff.
-    Everything that isn't in double curly brackets is plain-ol HTML.
+  This is a Nunjucks file. Nunjucks is like HTML but has support for templates and stuff.
+  Everything that isn't in double curly brackets is plain-ol HTML.
 -->
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/static/style.css" />
-
-    <!-- 
-        The double curly braces turn on Nunjucks! This tells it to read the "title" variable.
-        The title variable is set in the front matter.
+    <link rel="stylesheet" href="/static/style.css"/>
+    <script defer src="/static/js/main.js"></script>
+    <!--
+      The double curly braces turn on Nunjucks! This tells it to read the "title" variable.
+      The title variable is set in the front matter.
     -->
     <title>SFA Home Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-
+      <!-- Flexbox is against the spirit of Web 1.0, but on the other hand, auughhhh -->
+      <div style="width:100%; display:flex;">
+        <span style="flex:1;">
+          <a href="/">Warp Back To Home Page</a>
+        </span>
+        <span style="flex:1; text-align:right;">
+          "<span id="funny-message">Disabling Javascript from</span> 1995-Present"
+        </span>
+      </div>
+      <hr />
     </header>
+
+    <!-- Put the content into the body of the page. `safe` tells it to not double-escape stuff. -->
     <!--
-        Put the content into the body of the page. `safe` tells it to not double-escape stuff.
-    -->
-    <!--
-    Hello, source code editor!
+  Hello, source code editor!
 
-    The special filename "index" is what you access at the root of a website, without any `/whatever/foo.html` afterwards.
+  The special filename "index" is what you access at the root of a website, without any `/whatever/foo.html` afterwards.
 
-    The three-dash-delimited area above is called the "front matter." It must be at the top of the file if there is one and
-    gives eleventy some more information about how to work with this file.
-    This front matter says that this page should be inserted into the `wrapper.md` layout; layouts and includes are both
-    in the _includes directory (yes, it's confusing).
-    You write the front matter in YAML, a language sent by Satan to punish programmers. Hopefully you can just stick to
-    easy key-value stuff.
+  The three-dash-delimited area above is called the "front matter." It must be at the top of the file if there is one and
+  gives eleventy some more information about how to work with this file.
+  This front matter says that this page should be inserted into the `wrapper.md` layout; layouts and includes are both
+  in the _includes directory (yes, it's confusing).
+  You write the front matter in YAML, a language sent by Satan to punish programmers. Hopefully you can just stick to
+  easy key-value stuff.
 
-    https://www.11ty.dev/docs/layouts/
+  https://www.11ty.dev/docs/layouts/
+
+  You may also notice I like writing each sentence on its own line. This is called "ventilated prose."
+  https://writetheasciidocs.netlify.app/ventilated-prose
+  I like it but you don't have to do so
 -->
 <p>Welcome to the</p>
 <h1 style="text-align: center;">Carleton Science-Fiction Fantasy Alliance!</h1>
 <p>home page.</p>
-<p>This is a work-in-progress remake of the old Wordpress site, hopefully easier to host and maintain.</p>
+<p>This is a work-in-progress remake of the old Wordpress site, which will hopefully be easier to host and maintain.</p>
+<h2>Current Shows</h2>
+<!-- Remember to update captains-log.md when you update this -->
+<ul>
+<li>Lost In Space S2</li>
+<li>Legend of Vox Machina S2</li>
+<li>Jonathon Strange and Mr. Norell</li>
+<li>Star Trek: TNG</li>
+<li>Adventure Time</li>
+<li>Animorphs</li>
+</ul>
+<h2>Who are we?</h2>
+<p>We are people who like to explore imaginary worlds, with friends.
+Usually that involves watching TV.</p>
+<p>If you'd like to join, just show up! We generally host a meeting every Friday at about 6:30 at Benton House. We don't bite.
+<a href="https://groups.google.com/a/carleton.edu/g/sfa.group">Or, you can join the Google Group</a>, so you get weekly emails with the latest scoop.
+(That rhymed completely incidentally.)</p>
+<p>Current club leadership as of 2023-2024 is:</p>
+<ul>
+<li>Redacted Maxwell '23, the President.</li>
+<li>Petrichor Park '24, the Treasurer, webmaster, and generally most amazing and good-looking person alive.</li>
+<li>Lily Haas '24, the Vice President.</li>
+<li>Daphne Suh '24, the Vice Vice President.</li>
+</ul>
+<h2>Cool and Fun Links</h2>
+<ul>
+<li><a href="/captains-log"><strong>Captain's Log</strong></a>: A listing of the shows we've watched and events we've done.</li>
+</ul>
 
 
     <footer>
-        <hr />
-        <i>
-            This page created Tue, 09 May 2023 18:00:17 GMT. Site was built Tue, 09 May 2023 23:28:39 GMT.
-            <br>
-            This site built using <a href="https://11ty.dev" target="_blank" rel="noopener noreferrer">Eleventy.js</a>,
-            <a href="https://github.com/h5bp/main.css" target="_blank" rel="noopener noreferrer">Main.css</a> with help from
-            <a href="https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41" target="_blank" rel="noopener noreferrer">56 Bytes of CSS</a>,
-            and <a href="https://gifcities.org" target="_blank" rel="noopener noreferrer">GifCities</a>.
-            <br>
-            Current webmaster: Petrichor Park '24.
-        </i>
+      <hr/>
+      <i>
+        This page created Tue, 09 May 2023 18:00:17 GMT. Site was built Wed, 10 May 2023 05:11:42 GMT.
+        <br>
+        <!-- I defined "extLink" in the eleventy.config.js file -->
+        This site built using <a href="https://11ty.dev" target="_blank" rel="noopener noreferrer">Eleventy.js</a>,
+        <a href="https://github.com/h5bp/main.css" target="_blank" rel="noopener noreferrer">Main.css</a> with help from
+        <a href="https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41" target="_blank" rel="noopener noreferrer">56 Bytes of CSS</a>,
+        and <a href="https://gifcities.org" target="_blank" rel="noopener noreferrer">GifCities</a>.
+        <br>
+        Current webmaster: Petrichor Park '24.
+        <br><br>
+        <a href="/">Warp back to homepage</a>
+      </i>
     </footer>
-</body>
+  </body>
 </html>
