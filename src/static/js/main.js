@@ -5,6 +5,7 @@ const FUNNY_BLURBS = [
   "Dirking Gently from",
   "Losing Space from",
   "Legally Acquiring Media from",
+  "Unable to think of more splash texts from"
 ];
 
 document.getElementById("funny-message").textContent = FUNNY_BLURBS[Math.floor(Math.random() * FUNNY_BLURBS.length)];
