@@ -20,6 +20,10 @@ date: 2023-05-09 18:00:17
   You may also notice I like writing each sentence on its own line. This is called "ventilated prose."
   https://writetheasciidocs.netlify.app/ventilated-prose
   I like it but you don't have to do so
+
+  This is a Markdown file, by the way.
+  https://www.markdownguide.org/basic-syntax
+  Much easier than HTML!
 -->
 
 Welcome to the
