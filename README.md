@@ -5,9 +5,9 @@ Welcome to the repository for Carleton's Science-Fiction Fantasy Alliance websit
 As of 2022-2023 the leadership is:
 
 - Redacted Maxwell -- President
+- Lily Haas -- Vice President
 - Daphne Suh -- Vice President
 - Petrichor Park -- Treasurer
-- Lily Haas -- Secretary
 
 ## Repository Structure
 
