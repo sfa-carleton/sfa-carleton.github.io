@@ -36,7 +36,7 @@
     <footer>
       <hr/>
       <i>
-        This page created {{ page.date.toUTCString() }}. Site was built {{ buildTime.toUTCString() }}.
+        This page created {{ page.date | formatDateToMN }}. Site was built {{ buildTime | formatDateToMN }}.
         <br>
         <!-- I defined "extLink" in the eleventy.config.js file -->
         This site built using {% extLink "Eleventy.js", "https://11ty.dev" %},
