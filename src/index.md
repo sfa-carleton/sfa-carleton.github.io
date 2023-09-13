@@ -56,10 +56,9 @@ If you'd like to join, just show up! We generally host a meeting every Friday at
 
 Current club leadership as of 2023-2024 is:
 
-- Redacted Maxwell '23, the President.
+- Lily Haas '24, the President.
+- Daphne Suh '24, the Vice President.
 - Petrichor Park '24, the Treasurer, webmaster, and generally most amazing and good-looking person alive.
-- Lily Haas '24, the Vice President.
-- Daphne Suh '24, the Vice Vice President.
 
 ## Cool and Fun Links
 
