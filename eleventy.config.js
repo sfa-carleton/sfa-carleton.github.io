@@ -8,8 +8,14 @@ module.exports = function(cfg) {
     });
     cfg.addGlobalData("buildTime", new Date());
 
+    // Add a custom shortcode for opening links in other tabs
     cfg.addShortcode("extLink", (text, href) => 
         `<a href="${href}" target="_blank" rel="noopener noreferrer">${text}</a>`);
+    // Add a filter that formats dates in Carleton's time zone (by default it prints dates in GMT)
+    cfg.addFilter("formatDateToMN", function(date) {
+        return date.toLocaleTimeString("en-US", {timeZone: "America/Chicago"});
+    });
+
 
     return {
         dir: {
